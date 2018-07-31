@@ -61,6 +61,8 @@ void freeChainNode(ChainList *pList, ChainNode *pChainNode)
 	free(pChainNode);
 }
 
+
+// 插入到头部
 int insertNodePrior(ChainList *pList, void *data)
 {
 	ChainNode *pNode;
@@ -87,6 +89,7 @@ int insertNodePrior(ChainList *pList, void *data)
 	return 0;
 }
 
+// 添加到尾部
 int appendNode(ChainList *pList, void *data)
 {
 	ChainNode *pNode;
@@ -118,6 +121,7 @@ int appendNode(ChainList *pList, void *data)
 	return 0;
 }
 
+// 按升序排列，排序函数compareFunc
 int insertNodeAsc(ChainList *pList, void *data)
 {
 	ChainNode *pNew;

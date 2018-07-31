@@ -56,6 +56,14 @@ void base64_set_line_separator(struct base64_context *context, \
     }
 }
 
+
+/* base64初始化
+ * base64_context* ：base64上下文
+ * const int ：一行的长度
+ * const unsigned char ： 补充字符
+ * const unsigned char ： 
+ * const unsigned char ： 
+ */
 void base64_init_ex(struct base64_context *context, const int nLineLength, \
 		const unsigned char chPlus, const unsigned char chSplash, \
 		const unsigned char chPad)
